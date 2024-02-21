@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>User Hobbies Form</title>
+</head>
+<body>
+    <form action="#" th:action="@{/submitHobbies}" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="hobbies">Hobbies:</label>
+        <input type="text" id="hobbies" name="hobbies" required>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
