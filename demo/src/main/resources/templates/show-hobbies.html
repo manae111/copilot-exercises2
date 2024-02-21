@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Show Hobbies</title>
+</head>
+<body>
+    <h1 th:text="'Hello, ' + ${name} + '. Your hobbies are:'"></h1>
+    <ul>
+        <li th:each="hobby : ${hobbies}" th:text="${hobby}"></li>
+    </ul>
+</body>
+</html>
